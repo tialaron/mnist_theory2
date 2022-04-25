@@ -47,7 +47,7 @@ texts = ["Перцептрон - математический аналог не�
          "Наша модель нейронной сети", "График точности", "График функции потерь", "Матрица ошибок"
 
          ]
-file_path = '/sysroot/home/user/Загрузки/PyProject/mnist_streamlit/venv/'
+file_path = '/app/mnist_theory/'
 
 for header_name, subheader_name, file_name, text_header, text in zip(header_names, subheader_names, file_names, text_headers, texts):
     # st.subheader(header_name)
@@ -127,7 +127,7 @@ col21 , col22 = st.columns(2)
 with col21:
     with st.container():
         st.title("Примерно так выглядят цифры из базы")
-        st.image('/sysroot/home/user/Загрузки/PyProject/mnist_streamlit/venv/mnist_example.png')
+        st.image('mnist_example.png')
         #run = st.checkbox('Run')
         #FRAME_WINDOW = st.image([])
         #camera = cv2.VideoCapture(0)
@@ -159,7 +159,7 @@ with col22:
 
             mnist_like = img_preprocess(img_array)
 
-            model_2d = load_model('/sysroot/home/user/Загрузки/PyProject/mnist_streamlit/venv/mnist_2d.h5')
+            model_2d = load_model('mnist_2d.h5')
 
             #st.write(imgData1)
 
